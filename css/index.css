@@ -7,7 +7,9 @@ h6,
 p {
 	margin: 0;
 	padding: 0;
-	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 
@@ -38,6 +40,7 @@ body {
 	font-size: 100%;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
+
 }
 
 a:link,
@@ -93,11 +96,17 @@ p {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 15px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 @media only screen and (min-width: 767px) {
 	.container {
 		padding: 35px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
 }
 
@@ -233,6 +242,12 @@ z-index: 20;
 		z-index: 20;
 
 	}
+
+	.iphone-mask {
+		position: relative;
+		max-width: 120%;
+		top: -10%;
+	}
 }
 
 .iphone-screenshot {
@@ -243,6 +258,9 @@ z-index: 20;
 	height: 0;
 	margin: 0 auto;
 	padding-bottom: 182%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 @media only screen and (min-width: 767px) {
@@ -254,8 +272,11 @@ z-index: 20;
 
 .iphone-screenshot img {
 	position: absolute;
-	top: 13.88%;
+	top: 0%;
 	left: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .iphone-mask {
@@ -266,6 +287,7 @@ z-index: 20;
 	display: block;
 	bottom: 0;
 	right: 0;
+
 }
 
 .app_store {
@@ -274,6 +296,9 @@ z-index: 20;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 20%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .footer {
@@ -315,10 +340,13 @@ z-index: 20;
 		.contact a {
 			padding-right: 0;
 			padding-left: 12px;
+			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+			box-sizing: border-box;         /* Opera/IE 8+ */
 		}
 	}
 
-.fadeIn {
+	.fadeIn {
 		animation: fadein 3s;
 	-moz-animation: fadein 3s; /* Firefox 
 	-webkit-animation: fadein 3s; /* Safari and Chrome 
