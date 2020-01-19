@@ -1,2 +1,3 @@
-# ThreeWishes.github.io
-genie host
+# Genie Landing Page
+
+# Wish Away!
